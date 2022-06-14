@@ -17,4 +17,12 @@ public class NoteBook extends Product {
 			return 20000.0;
 		}
 	}
+	
+	public String getCpu() {
+		if(ThinkPad) {
+			return "i7";
+		}else {
+			return "i5";
+		}
+	}
 }
