@@ -1,0 +1,11 @@
+package com.varxyz.jy200.mod003;
+
+import java.util.Iterator;
+
+public class Test {
+	
+	
+	public Test (int x) {
+		
+	}
+}

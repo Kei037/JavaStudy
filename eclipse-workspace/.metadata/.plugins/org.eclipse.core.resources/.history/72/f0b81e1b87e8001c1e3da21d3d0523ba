@@ -1,0 +1,18 @@
+package com.varxyz.jy200.mod003;
+
+public class countTest {
+	
+	private void Count(int x) {
+		if ( 1 % x == 0 && x % x == 0 ) {
+			
+		}
+	}
+	
+	public static void main(String[] args) {
+		for (int i = 1; i < 1001; i++) {
+			
+		}
+
+	}
+
+}

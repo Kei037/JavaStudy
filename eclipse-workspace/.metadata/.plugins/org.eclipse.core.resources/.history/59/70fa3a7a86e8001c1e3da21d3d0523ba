@@ -1,0 +1,15 @@
+package com.varxyz.jy200.mod003;
+
+public class countTest {
+	
+	private static double count = 0;
+	
+	public static void main(String[] args) {
+		for (int i = 1; i < 1001; i++) {
+			count += i;
+			System.out.println(i);
+		}
+
+	}
+
+}

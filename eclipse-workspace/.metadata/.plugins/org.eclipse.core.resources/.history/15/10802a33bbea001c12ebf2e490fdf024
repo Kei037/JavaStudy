@@ -1,0 +1,30 @@
+package com.varxyz.jy200.mod003;
+
+import java.util.Iterator;
+
+public class SubStringTest {
+	String result;
+	String item;
+	String line;
+	
+	public void isSubString(String item, String line) {
+		String a1;
+	    String a2;
+	    a1 = item;
+		a2 = line;
+
+		for ( int i = 0; i < a1.length() ; i++ ) {
+			for ( int j = 0; j < a2.length(); j++ ) {
+				if ( a1.charAt(i) == a2.charAt(j) ) {
+					System.out.println(a1.charAt(i));
+                }
+			}
+		}
+	}
+	
+	public static void main(String[] args) {
+		SubStringTest txt = new SubStringTest();
+		txt.isSubString("The cat in the hat", "cat");
+	}
+	
+}

@@ -1,0 +1,10 @@
+package com.varxyz.jy200.mod003;
+
+public class countTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

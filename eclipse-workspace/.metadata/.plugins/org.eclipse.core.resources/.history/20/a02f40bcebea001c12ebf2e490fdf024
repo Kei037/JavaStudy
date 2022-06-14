@@ -1,0 +1,12 @@
+package com.varxyz.jy200.mod004;
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		Manager e = new Manager();
+		e.name = "유비";
+		e.salary = 2;
+		e.getDetails();
+	}
+
+}

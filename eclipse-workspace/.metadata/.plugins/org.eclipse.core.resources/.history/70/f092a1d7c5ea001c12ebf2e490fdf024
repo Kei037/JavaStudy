@@ -1,0 +1,39 @@
+package com.varxyz.jy200.mod003;
+
+import java.util.Iterator;
+
+public class Classify {
+	
+	int count;
+	int [] nums = new int[10];
+	int [] target = new int[5];
+	
+	public void isClassify() {
+//		배열 만드는 부분(확인)
+		for (int i = 0; i < nums.length; i++) {
+			nums[i] += i;
+			System.out.print(nums[i]);
+		}
+		System.out.println();
+		for (int i = 0; i < target.length; i++) {
+			target[i] += i;
+			System.out.print(target[i]);
+		}
+		
+//		배열이 어디에 있는지 찾는 부분
+		for (int i = 0; i < nums.length; i++) {
+			for (int j = 0; j < target.length; j++) {
+				if ( nums[i] == target[j] ) {
+					count++;
+					System.out.println(count);
+				}
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		Classify a = new Classify();
+		a.isClassify();
+	}
+
+}

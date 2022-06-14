@@ -1,0 +1,16 @@
+package com.varxyz.jy200.mod003;
+
+public class Classify {
+	
+	int [] nums = new int[10];
+	int [] target = new int[5];
+	
+	public void isClassify() {
+	}
+
+	public static void main(String[] args) {
+		Classify a = new Classify();
+		a.isClassify();
+	}
+
+}

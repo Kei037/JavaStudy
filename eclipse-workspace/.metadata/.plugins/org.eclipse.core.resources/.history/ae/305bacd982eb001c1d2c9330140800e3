@@ -1,0 +1,13 @@
+package com.varxyz.jy200.mod004;
+
+import java.util.Date;
+
+public class Employee {
+	String name;
+	protected double salary;
+	public Date birthDate;
+	
+	public String getDetails() {
+		return "Name: " + name + "\nSalary: " + salary;
+	}
+}

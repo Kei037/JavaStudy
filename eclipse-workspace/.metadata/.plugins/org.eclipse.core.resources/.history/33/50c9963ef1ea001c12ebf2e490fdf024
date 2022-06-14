@@ -1,0 +1,20 @@
+package com.varxyz.jy200.mod003;
+
+public class RandomEmoji {
+	
+	public void percent() {
+		String[][] emoji = new String[][] {
+			{"동그라미", "사각형", "삼각형", "타원형", "역삼각형", "별"},
+			{"70", "50", "30", "10"}
+			};
+		int randomInt = (int)(Math.random() * 100);
+		System.out.println(randomInt);
+	}
+	
+	public static void main(String[] args) {
+		RandomEmoji btn = new RandomEmoji();
+		btn.percent();
+	}
+
+}
+	

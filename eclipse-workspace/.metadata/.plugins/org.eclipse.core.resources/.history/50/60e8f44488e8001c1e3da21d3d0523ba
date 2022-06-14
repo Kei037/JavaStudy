@@ -1,0 +1,22 @@
+package com.varxyz.jy200.mod003;
+
+public class CountTest {
+
+	static int result = 0;
+	
+	private void CountTest() {
+		
+		
+	}
+	
+	public static void main(String[] args) {
+		
+		for (int i = 1; i < 1001; i++) {
+			if ( 1 % i == 0 && i % i == 0 ) {
+				result++;
+			}
+		}
+		
+
+	}
+}
