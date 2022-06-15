@@ -10,7 +10,7 @@ package com.varxyz.jy200.mod006;
 
 public class EqualsTest {
 	public static void main(String[] args) {
-		Employee e =new Employee();
+		Employee e = new Employee();
 		e.setName("유비");
 		e.setSalary(1000.0);
 		e.setBirthDate(new MyDate(10, 4, 2000));
@@ -22,6 +22,13 @@ public class EqualsTest {
 		
 		System.out.println(e == e2);
 		System.out.println(e.equals(e2));
+		System.err.println(args);
+		
+		System.out.println();
 	}
 
+
 }
+
+// 클래스는 객체 X
+// 클래스 내에 추상메서드가 존재하면 그 클래스는 반드시 추상클래스로 정의
