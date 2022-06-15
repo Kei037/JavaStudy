@@ -16,6 +16,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -46,17 +47,10 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.varxyz.banking"/>
-			<item value="jv200-project"/>
-			<item value="jv200-pj"/>
 		</list>
 		<list key="name">
-			<item value="jv200-pj"/>
 		</list>
 		<list key="artifactId">
-			<item value="jv200-pj"/>
-			<item value="jv200-project1"/>
-			<item value="jv200-project"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -69,5 +63,7 @@
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
 	</section>
 </section>
