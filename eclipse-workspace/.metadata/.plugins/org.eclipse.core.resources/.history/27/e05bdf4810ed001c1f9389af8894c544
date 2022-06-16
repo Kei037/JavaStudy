@@ -1,0 +1,12 @@
+package com.varxyz.jy200.mod007;
+
+/**
+ * -. abstract메소드의 집합, 상수 (public)
+ * -. 
+ * @author Administrator
+ *
+ */
+
+public interface Flyer {
+	
+}

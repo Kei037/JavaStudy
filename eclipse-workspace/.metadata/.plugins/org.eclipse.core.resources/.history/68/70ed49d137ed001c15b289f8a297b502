@@ -1,0 +1,13 @@
+package com.varxyz.jy200.mod007;
+
+public class Book extends Libary {
+	public void Book(String book) {
+		this.book = book;
+	}
+
+	String book;
+	
+	public void getBook(int serial) {
+		System.out.println(bookList[serial]);
+	}
+}

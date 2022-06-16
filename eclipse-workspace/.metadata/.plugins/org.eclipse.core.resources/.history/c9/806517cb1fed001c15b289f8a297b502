@@ -1,0 +1,16 @@
+package com.varxyz.jy200.mod007;
+
+public class Book extends Libary {
+	Book book;
+	public void addBook(Book book) {
+		this.book = book;
+	}
+	
+	public void getBook() {
+		
+	}
+	
+	public void setBook() {
+		
+	}
+}

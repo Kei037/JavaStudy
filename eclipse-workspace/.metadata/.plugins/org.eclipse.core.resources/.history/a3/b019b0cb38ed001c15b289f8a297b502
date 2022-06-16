@@ -1,0 +1,14 @@
+package com.varxyz.jy200.mod007;
+
+public class Book {
+	
+	private int serial;
+	
+	public void Book(String book) {
+		this.book = book;
+	}
+
+	public getLibary() {
+		return this.lib;
+	}
+}

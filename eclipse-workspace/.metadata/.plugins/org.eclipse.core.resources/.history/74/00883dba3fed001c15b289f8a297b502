@@ -1,0 +1,25 @@
+package com.varxyz.jy200.mod001;
+
+import com.varxyz.jy200.mod007.예외;
+import com.varxyz.jy200.mod007.예외가;
+import com.varxyz.jy200.mod007.있는;
+
+public class Memo {
+	
+/**
+ * try {
+		예외 발생 가능성이 있는 코드
+	}catch {
+		예외가 발생
+	}
+ */
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

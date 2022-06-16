@@ -1,0 +1,10 @@
+package com.varxyz.jy200.mod007;
+
+public class LibaryTest {
+	public static void main(String[] args) {
+		Libary test = new Libary("s");
+		test.addBook(new Book("어린왕자"));
+		test.getBook(0);
+	}
+
+}

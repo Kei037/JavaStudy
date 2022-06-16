@@ -2,4 +2,5 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="com.varxyz.jy200.mod002.MyDate"/>
+    <fullyQualifiedTypeName name="java.nio.file.attribute.AclEntry"/>
 </qualifiedTypeNameHistroy>

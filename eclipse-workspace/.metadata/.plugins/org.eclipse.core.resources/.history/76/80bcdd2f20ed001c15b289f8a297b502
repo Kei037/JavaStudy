@@ -1,0 +1,9 @@
+package com.varxyz.jy200.mod007;
+
+public class LibaryTest {
+	public static void main(String[] args) {
+		Libary test = new Book();
+		test.addBook();
+	}
+
+}

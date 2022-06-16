@@ -1,0 +1,26 @@
+package com.varxyz.jy200.mod007;
+
+public class Libary {
+	
+	private Book[] books = new Book[100];
+	
+	private static Book book;
+	
+	int count;
+	
+	private Libary() {
+		
+	}
+	
+	private static Libary lib = new Libary();
+	
+	
+	
+    public Book addBook(Book book) {
+    	return book;
+	}
+	
+	public static void main(String[] args) {
+		bok.addBook();
+	}
+}

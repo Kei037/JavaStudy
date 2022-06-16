@@ -1,0 +1,13 @@
+package com.varxyz.jy200.mod007;
+
+public class Book {
+//	private String book;
+//	
+//	public static void Libary() {
+//		System.out.println("s");
+//	}
+//	
+//	public Book(String book) {
+//		this.book = book;
+//	}
+}
