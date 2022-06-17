@@ -6,3 +6,4 @@
 1655360270002	Delete element
 1655360278797	Delete element
 1655368959387	Inline local variable 'sfa'
+1655433525681	Extract local variable 'checkNum'

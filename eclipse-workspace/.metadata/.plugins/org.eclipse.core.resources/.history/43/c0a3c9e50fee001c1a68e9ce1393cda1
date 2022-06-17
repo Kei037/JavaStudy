@@ -1,0 +1,7 @@
+package com.varxyz.banking.domain;
+
+public class InsufficientBalanceException extends RuntimeException {
+	pulbic InsufficientBalanceException(String msg) {
+		super(msg);
+	}
+}

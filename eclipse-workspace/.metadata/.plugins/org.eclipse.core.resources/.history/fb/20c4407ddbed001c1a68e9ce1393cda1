@@ -1,0 +1,11 @@
+package com.varxyz.jy200.mod008;
+
+public class PrimeCheckException extends Exception {
+	
+	String message = "이 숫자는 소수가 아닙니다.";
+	
+	public PrimeCheckException(String message) {
+		this.message = message;
+		super(message);
+	}
+}

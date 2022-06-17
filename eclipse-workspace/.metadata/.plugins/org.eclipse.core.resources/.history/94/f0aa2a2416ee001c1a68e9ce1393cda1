@@ -1,0 +1,20 @@
+package com.varxyz.banking.domain;
+
+public class AccountTest {
+	public static void main(String[] args) {
+		Account user = new Account();	// 계좌 생성
+		user.deposite(1000.0);  		// 초기 입금액
+		System.out.println("현재 잔고 : " + user.balance);
+		
+		CheckingAccount user1 = new CheckingAccount();
+		user.deposite(1000.0);  		// 초기 입금액
+		
+		user1.withdraw(1300.0);
+		System.out.println("남은 대출 한도 : " + user1.overdraftAmount);
+		System.out.println("현재 잔고 : " + user1.balance);
+		
+		user1.withdraw(700.0);
+		System.out.println("남은 대출 한도 : " + user1.overdraftAmount);
+		System.out.println("현재 잔고 : " + user.balance);
+	}
+}

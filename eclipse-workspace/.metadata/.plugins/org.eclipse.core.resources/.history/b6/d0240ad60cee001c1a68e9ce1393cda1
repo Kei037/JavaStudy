@@ -1,0 +1,12 @@
+package com.varxyz.banking.domain;
+
+public class CheckingAccount extends Account{
+	private double overdraftAmount;
+	
+	public void withdraw(double amount) {
+		if (balance - amount < 0) {
+			// 예외발생
+		}
+		super.balance -= amount;
+	}
+}
