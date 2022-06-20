@@ -10839,3 +10839,7 @@ java.net.URISyntaxException: Illegal character in path at index 28: file:/C:/NCS
 2022-06-20 17:55:47,454 [Worker-103: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Java_young\JavaStudy\eclipse-workspace\jy201-pj\src\main\resources
 2022-06-20 17:55:47,455 [Worker-103: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-06-20 17:55:47,455 [Worker-103: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Java_young\JavaStudy\eclipse-workspace\jy201-pj\src\test\resources
+2022-06-20 17:58:26,305 [Worker-102: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-06-20 17:58:26,305 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Java_young\JavaStudy\eclipse-workspace\jy201-pj\src\main\resources
+2022-06-20 17:58:26,305 [Worker-102: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-06-20 17:58:26,306 [Worker-102: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Java_young\JavaStudy\eclipse-workspace\jy201-pj\src\test\resources

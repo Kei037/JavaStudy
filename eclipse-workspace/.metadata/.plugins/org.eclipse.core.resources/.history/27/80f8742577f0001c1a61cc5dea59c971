@@ -28,7 +28,6 @@ public class AccountServiceImpl implements AccountService {
 		account.setCustomer(customer);
 	}
 	
-	// 수정중
 	public List<Account> getAccountBySsn(String ssn) {
 		return null;
 	}
