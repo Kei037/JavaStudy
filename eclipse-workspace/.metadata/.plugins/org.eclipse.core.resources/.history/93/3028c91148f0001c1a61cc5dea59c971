@@ -1,0 +1,11 @@
+package com.varxyz.banking.domain;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Customer {
+	Map<String, String> customer = new HashMap<String, String>();
+	map2.put("one", "원");
+	map2.put("two", "투");
+	map2.put("three", "쓰리");
+}

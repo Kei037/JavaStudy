@@ -1,0 +1,11 @@
+package com.varxyz.banking.domain;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+public class AccountList implements AccountService {
+	private List<Account> accountList = new ArrayList<Account>();
+
+	
+}

@@ -1,0 +1,17 @@
+package com.varxyz.banking.domain;
+
+public interface CustomerServiceTest {
+	void addCustomer(Customer customer);
+	
+	public getCustomerBySsn(String ssn) {
+		
+	}
+}
+
+
+//while (Customer c : customerList) {
+//	if(customer.getSsn().equals(c.getSsn())) {
+//		return c;
+//	}
+//}
+//return null;

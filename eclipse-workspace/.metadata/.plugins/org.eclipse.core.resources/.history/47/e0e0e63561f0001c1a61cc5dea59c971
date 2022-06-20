@@ -1,0 +1,15 @@
+package com.varxyz.banking.domain;
+
+
+public class CustomerServiceTest {
+	public static void main(String[] args) {
+		CustomerServiceImpl2 test = new CustomerServiceImpl2();
+		Customer testC = new Customer();
+		testC.setName("홍길동");
+		testC.setSsn("123456-1652312");
+		testC.setPhone("010-1234-5678");
+		System.out.println(testC.getName());
+		test.addCustomer(testC);
+		test.getAllCustomers()
+	}
+}

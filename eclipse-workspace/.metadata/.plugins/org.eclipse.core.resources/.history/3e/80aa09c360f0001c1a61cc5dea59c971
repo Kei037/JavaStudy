@@ -1,0 +1,9 @@
+package com.varxyz.banking.domain;
+
+
+public class CustomerServiceTest {
+	public static void main(String[] args) {
+		CustomerServiceImpl2 test = new CustomerServiceImpl2();
+		test.addCustomer(null);
+	}
+}

@@ -1,0 +1,13 @@
+package com.varxyz.jy200.mod009;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListExample2 {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add(0, new String("one"));
+		String total = (list.get(0)).Stringvalue();
+		System.out.println(total);
+	}
+}

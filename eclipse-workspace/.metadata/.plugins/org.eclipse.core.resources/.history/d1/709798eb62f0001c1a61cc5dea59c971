@@ -1,0 +1,5 @@
+package com.varxyz.banking.domain;
+
+public class AccountList implements AccountService {
+	private List<Account> accountList = new ArrayList<Account>();
+}

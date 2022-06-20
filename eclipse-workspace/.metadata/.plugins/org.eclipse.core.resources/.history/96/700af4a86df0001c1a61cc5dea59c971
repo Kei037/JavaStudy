@@ -1,0 +1,7 @@
+package com.varxyz.banking.domain;
+
+public class AccountServiceTest {
+	public static void main(String[] args) {
+		Account txt = new Account(null, 0);
+	}
+}

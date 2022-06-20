@@ -1,0 +1,31 @@
+package com.varxyz.banking.domain;
+
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
+
+public class Customer {
+	public void addCustomer(String name, String ssn, String phone, String customerId, String passwd) {
+		Map<String, String> customer = new HashMap<String, String>();
+		customer.put("name", name);
+		customer.put("ssn", ssn);
+		customer.put("phone", phone);
+		customer.put("Id", customerId);
+		customer.put("passwd", passwd);
+		
+//		Set customer1 = new HashSet();
+//		customer1.add(name);
+//		customer1.add(ssn);
+//		customer1.add(phone);
+//		customer1.add(customerId);
+//		customer1.add(passwd);
+		
+		
+		System.out.println(customer);
+	}
+	public static void main(String[] args) {
+		Customer a = new Customer();
+		a.addCustomer("홍길동", "111111-3254687", "010-1234-5678", "admin", "1234");
+	}
+}

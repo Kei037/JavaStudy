@@ -1,0 +1,24 @@
+package com.varxyz.banking.domain;
+
+public class CustomerServiceImpl implements CustomerServiceTest {
+	private Map<Stirng Customer> map = new HashMap<>();
+	
+	public void addCustomer(Customer customer) {
+		if(!map.containsKey(customer.getSsn())) {
+			map.put(customer)
+		}
+	}
+	
+	public Customer getCustomerBySsn(String ssn) {
+		for (Customer c : customerList) {
+			if(ssn.equals(c.getSsn())) {
+				return c;
+			}
+		}
+		return null;
+	}
+	
+	public Collection<Customer> getAllCustomers() {
+		return customerList.size();
+	}
+}

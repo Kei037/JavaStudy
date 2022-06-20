@@ -1,0 +1,7 @@
+package com.varxyz.banking.domain;
+
+public interface AccountService {
+	public void AccountServiceImpl();
+	public Account createSavingsAccount(String accountNum, double balance, double interestRate);
+	public Account createChekingsAccount;
+}

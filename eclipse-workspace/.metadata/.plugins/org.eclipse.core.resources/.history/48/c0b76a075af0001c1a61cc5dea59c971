@@ -1,0 +1,9 @@
+package com.varxyz.banking.domain;
+
+public interface CustomerServiceTest {
+	void addCustomer(Customer customer);
+	
+	public getCustomerBySsn(String ssn) {
+		
+	}
+}

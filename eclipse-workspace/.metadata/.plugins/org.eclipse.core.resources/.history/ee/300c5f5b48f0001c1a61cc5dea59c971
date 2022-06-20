@@ -1,0 +1,9 @@
+package com.varxyz.banking.domain;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class Customer {
+	Map<String, String> customer = new HashMap<String, String>();
+	customer.put("name", "ghdrlfehd");
+}

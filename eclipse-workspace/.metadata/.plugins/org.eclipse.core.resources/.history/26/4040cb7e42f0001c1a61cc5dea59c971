@@ -1,0 +1,14 @@
+package com.varxyz.jy200.mod009;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ListExample2 {
+	public static void main(String[] args) {
+		ArrayList<String> list = new ArrayList<String>();
+		list.add(0, new String("one"));
+		list.add(1, new String("two"));
+		list.add(2, new String("3rd"));
+		System.out.println(list[1]);
+	}
+}

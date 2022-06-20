@@ -1,0 +1,7 @@
+package com.varxyz.banking.domain;
+
+public class CustomerServiceImpl implements CustomerServiceTest {
+	private Map<Stirng Customer> map = new HashMap<>();
+	
+	public void addCustomer(Customer customer)
+}

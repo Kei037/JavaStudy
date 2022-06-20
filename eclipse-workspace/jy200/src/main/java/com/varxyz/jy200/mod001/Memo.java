@@ -10,26 +10,15 @@ public class Memo {
 	}finally {
 		예외발생유뮤와 관계없이 처리할 코드
 	}
+	
+	-----------------------------------
+	Set <--- HashSet
+	중복X, 순서X
+	
+	List <--- ArrayList
+	중복O, 순서O
+	
+	Map <--- HashMap
+	(key-value)쌍으로 저장
  */
-	static String c = "ss";
-	public void test() {
-		String result = c;
-		System.out.println(result);
-	}
-	
-	
-	public static void main(String[] args) {
-		
-		int a = 10;
-		System.out.println(a);
-		for ( String arg : args ) {
-			System.out.println(arg);
-		}
-		
-		Memo m = new Memo();
-		m.test();
-		
-		System.out.println(args.length);
-	}
-	
 }

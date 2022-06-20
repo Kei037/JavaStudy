@@ -1,0 +1,10 @@
+package com.varxyz.jy200.mod009;
+
+import java.util.ArrayList;
+
+public class ListExample2 {
+	public static void main(String[] args) {
+		List list = new ArrayList<Integer>();
+		
+	}
+}
