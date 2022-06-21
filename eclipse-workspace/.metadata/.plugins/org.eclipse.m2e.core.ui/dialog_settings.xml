@@ -48,15 +48,27 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
+			<item value="com.young"/>
+			<item value="java.young"/>
+			<item value="java.young.pt"/>
+			<item value="javas"/>
 			<item value="jv-young"/>
 			<item value="java-young"/>
 		</list>
 		<list key="name">
+			<item value="javaYoung"/>
+			<item value="java-pt"/>
+			<item value="java_pt"/>
 			<item value="jv202"/>
 			<item value="jv-study"/>
 			<item value="java-study"/>
 		</list>
 		<list key="artifactId">
+			<item value="javaY"/>
+			<item value="java-young"/>
+			<item value="java-pt"/>
+			<item value="java_pt"/>
+			<item value="java.young"/>
 			<item value="jv202"/>
 			<item value="jv-study"/>
 			<item value="java-study"/>

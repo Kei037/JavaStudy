@@ -10,22 +10,22 @@ public class Account {
 		this.balance = balance;
 	}
 	
-	public void deposite(double amonut) {	// 입금기능 메소드
-		this.balance += amonut;
+	public void deposite(double amount) {	// 입금기능 메소드
+		this.balance += amount;
 	}
 	
 	public String getAccountNum() {
 		return accountNum;
 	}
-
+	
 	public void setAccountNum(String accountNum) {
 		this.accountNum = accountNum;
 	}
-
+	
 	public double getBalance() {
 		return balance;
 	}
-
+	
 	public void setBalance(double balance) {
 		this.balance = balance;
 	}

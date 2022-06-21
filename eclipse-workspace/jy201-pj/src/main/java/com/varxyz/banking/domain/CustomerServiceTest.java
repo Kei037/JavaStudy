@@ -2,6 +2,9 @@ package com.varxyz.banking.domain;
 
 import java.util.List;
 
+import com.varxyz.banking.Service.CustomerServiceImpl;
+import com.varxyz.banking.Service.CustomerServiceImpl2;
+
 public class CustomerServiceTest {
 	public static void main(String[] args) {
 		CustomerServiceImpl2 test = new CustomerServiceImpl2();
@@ -18,9 +21,5 @@ public class CustomerServiceTest {
 		System.out.println(test.getAllCustomers());
 		System.out.println(test.getNumOfCustomers());
 		
-		CustomerServiceImpl maplist = new CustomerServiceImpl();
-		maplist.addCustomer(testC);
-		System.out.println(maplist.getAllCustomers());
-		System.out.println(maplist.getNumOfCustomers());
 	}
 }

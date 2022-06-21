@@ -5,5 +5,17 @@
     <fullyQualifiedTypeName name="java.nio.file.attribute.AclEntry"/>
     <fullyQualifiedTypeName name="java.security.DomainCombiner"/>
     <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.util.Set"/>
+    <fullyQualifiedTypeName name="java.util.HashSet"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="java.util.Collection"/>
+    <fullyQualifiedTypeName name="java.util.HashMap"/>
+    <fullyQualifiedTypeName name="java.util.Map"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.varxyz.banking.domain.AccountServiceImpl"/>
     <fullyQualifiedTypeName name="com.varxyz.banking.domain.Account"/>
+    <fullyQualifiedTypeName name="com.varxyz.banking.domain.SavingsAccount"/>
+    <fullyQualifiedTypeName name="com.varxyz.banking.domain.CheckingAccount"/>
+    <fullyQualifiedTypeName name="com.varxyz.banking.domain.Customer"/>
 </qualifiedTypeNameHistroy>
