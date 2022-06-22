@@ -21,7 +21,7 @@ public class Memo {
 	Map <--- HashMap
 	(key-value)쌍으로 저장
 	
-	-----------------------------------
+	----------------------------------------------------------------------
 	DBMS
 	데이터 테이블의 가로 recode 세로 column
 	테이블 : class
@@ -36,16 +36,15 @@ public class Memo {
 	--> grant all privileges on jv250.* to 'jv250'@localhost with grant option;  // jv250 이름을 가진 로컬호스트에게 모든 권한을 위임하겟다.
 	
 	이클립스 연동
-	
 	pom.xml에 추가
 	<dependencies>
-  	<dependency>
+  	  <dependency>
   		<groupId>mysql</groupId>
   		<artifactId>mysql-connector-java</artifactId>
   		<version>8.0.29</version>
-  	</dependency>
-  </dependencies>
-	-----------------------------------
+  	  </dependency>
+  	</dependencies>
+	----------------------------------------------------------------------
 	SQL (Structured Query Language)
 	
 	1. DQL (Data Query Language)
@@ -70,5 +69,29 @@ public class Memo {
 	5. TCL (Transaction Control Language)
 		COMMIT
 		ROLLBACK
+	
+	----------------------------------------------------------------------
+	JDBC (Java DataBase Conectivity)
+	java.sql.*
+	javax.sql.*
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
  */
 }

@@ -31,3 +31,24 @@ INSERT INTO Customer (name, ssn, phone, customerID, passwd) VALUES ('장비', '9
 UPDATE Customer SET ssn='901212-1234567', phone='010-3434-4444' WHERE cid=1001;
 
 DELETE FROM Customer WHERE cid=1005;
+
+DROP TABLE Account;
+CREATE TABLE Account (
+	aid				BIGINT			PRIMARY KEY AUTO_INCREMENT,
+	accountNum		VARCHAR(11)		NOT NULL,	  		-- 111-11-1111
+	balance			DOUBLE			NOT NULL	DEFAULT 0.0,
+	interestRate	DOUBLE			NOT NULL	DEFAULT 0.0,
+	overdraft		DOUBLE			NOT NULL	DEFAULT 0.0,
+	accountType		CHAR(1)			NOT NULL	DEFAULT 'S',
+	customerId		BIGINT			NOT NULL,
+	regDate			TIMESTAMP		NOT NULL	DEFAULT CURRENT_TIMESTAMP,
+	
+	CONSTRAINT Account_customerId_FK FOREIGN KEY (customerId) REFERENCES Customer(cid)
+) AUTO_INCREMENT = 3001;
+
+INSERT INTO Account (accountNum, balance, interestRate, overdraft, accountType, customerId) VALUES ('123-45-6789', 10000.0, 5.0, 50000.0, 'S', 1004);
+INSERT INTO Account (accountNum, balance, interestRate, overdraft, accountType, customerId) VALUES ('456-78-2678', 20000.0, 2.5, 100000.0, 'C', 1006);
+
+SELECT * FROM Account;
+
+DELETE FROM Account WHERE aid=3001;
