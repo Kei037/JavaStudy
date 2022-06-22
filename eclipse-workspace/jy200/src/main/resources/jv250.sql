@@ -44,7 +44,7 @@ CREATE TABLE Account (
 	regDate			TIMESTAMP		NOT NULL	DEFAULT CURRENT_TIMESTAMP,
 	
 	CONSTRAINT Account_customerId_FK FOREIGN KEY (customerId) REFERENCES Customer(cid)
-) AUTO_INCREMENT = 3001;
+) AUTO_INCREMENT = 3001
 
 INSERT INTO Account (accountNum, balance, interestRate, overdraft, accountType, customerId) VALUES ('123-45-6789', 10000.0, 5.0, 50000.0, 'S', 1004);
 INSERT INTO Account (accountNum, balance, interestRate, overdraft, accountType, customerId) VALUES ('456-78-2678', 20000.0, 2.5, 100000.0, 'C', 1006);

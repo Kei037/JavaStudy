@@ -1,14 +1,12 @@
-package com.varxyz.jv250.jdbc;
+package com.varxyz.jv250.ajdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.sql.Statement;
 
-public class JDBCExample3 {
-	
+public class AJDBCExample4 {
 	public static void main(String[] args) {
 		String driver = "com.mysql.cj.jdbc.Driver";
 		String url = "jdbc:mysql://localhost:3306/jv250?serverTimezone=Asia/Seoul";
@@ -17,28 +15,24 @@ public class JDBCExample3 {
 		
 		try {
 			Class.forName(driver);
-			System.out.println("LOADED DRIVER ---> " + driver);
+			System.out.println("드라이버 로드중..." + driver);
 			
 			Connection con = DriverManager.getConnection(url, id, passwd);
-			System.out.println("CONNECTED TO ---> " + url);
+			System.out.println("url 연결중..." + url);
 			
-			String sql = "INSERT INTO Customer (name, ssn, phone, customerID, passwd)" + " VALUES (?, ?, ?, ?, ?)";
+			String sql = "DELETE FROM Account WHERE cid=?";
 			PreparedStatement stmt = con.prepareStatement(sql);
-			stmt.setString(1, "조조");
-			stmt.setString(2, "840824-4562498");
-			stmt.setString(3, "010-4583-6789");
-			stmt.setString(4, "sql");
-			stmt.setString(5, "1111");
+			stmt.setLong(1, 3003);
 			stmt.executeUpdate();
 			
-			System.out.println("INSERTED...");
+			System.out.println("DELETED...");
 			stmt.close();
 			con.close();
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-		} finally {
-			
 		}
+		
+		
 	}
 }

@@ -15,19 +15,21 @@ public class JDBCExample2 {
 		String id = "jv250";
 		String passwd = "jv250";
 		
-
+		Connection con = null;
+		PreparedStatement stmt = null;
+		ResultSet rs = null;
 		
 		try {
 			Class.forName(driver);
 			System.out.println("LOADED DRIVER ---> " + driver);
 			
-			Connection con = DriverManager.getConnection(url, id, passwd);
+			con = DriverManager.getConnection(url, id, passwd);
 			System.out.println("CONNECTED TO ---> " + url);
 			
 			String sql = "SELECT * FROM Customer WHERE name = ?";
-			PreparedStatement stmt = con.prepareStatement(sql);
-			stmt.setString(1, "유비");
-			ResultSet rs = stmt.executeQuery();
+			stmt = con.prepareStatement(sql);
+			stmt.setString(1, "장비");
+			rs = stmt.executeQuery();
 			while(rs.next()) {
 				long cid = rs.getLong("cid");
 				String customerId = rs.getString("customerId");
@@ -40,14 +42,13 @@ public class JDBCExample2 {
 				System.out.println("---------------------");
 			}
 			
-			rs.close();
-			stmt.close();
-			con.close();
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
-			
+			try { if (rs != null) { rs.close(); } } catch (Exception e) { e.printStackTrace(); }
+			try { if (stmt != null) { stmt.close(); } } catch (Exception e) { e.printStackTrace(); }
+			try { if (con != null) { con.close(); } } catch (Exception e) { e.printStackTrace(); }
 		}
+		
 	}
 }

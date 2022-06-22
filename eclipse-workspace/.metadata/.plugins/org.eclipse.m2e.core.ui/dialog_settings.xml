@@ -3,6 +3,7 @@
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
 			<item value="C:\Java_young\JavaStudy\eclipse-workspace"/>
+			<item value="C:\Java_young\JavaStudy\eclipse-workspace\jy200\src\main\resources\jv250.sql"/>
 			<item value="C:\Ncs\eclipse-workspace"/>
 			<item value="C:\Ncs\eclipse-workspace\jy200\src\main\java\com\varxyz\jy200\mod001"/>
 			<item value="C:\Ncs\eclipse-workspace\jy200"/>
@@ -48,30 +49,13 @@
 	</section>
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.young"/>
-			<item value="java.young"/>
-			<item value="java.young.pt"/>
-			<item value="javas"/>
-			<item value="jv-young"/>
-			<item value="java-young"/>
+			<item value="com.varxyz"/>
 		</list>
 		<list key="name">
-			<item value="javaYoung"/>
-			<item value="java-pt"/>
-			<item value="java_pt"/>
-			<item value="jv202"/>
-			<item value="jv-study"/>
-			<item value="java-study"/>
+			<item value="JV250"/>
 		</list>
 		<list key="artifactId">
-			<item value="javaY"/>
-			<item value="java-young"/>
-			<item value="java-pt"/>
-			<item value="java_pt"/>
-			<item value="java.young"/>
-			<item value="jv202"/>
-			<item value="jv-study"/>
-			<item value="java-study"/>
+			<item value="jv250"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
