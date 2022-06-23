@@ -52,3 +52,27 @@ INSERT INTO Account (accountNum, balance, interestRate, overdraft, accountType, 
 SELECT * FROM Account;
 
 DELETE FROM Account WHERE aid=3001;
+
+/* inner join
+ * 교집함 부분만 가져오기 때문에 가장빠르다 */
+SELECT * FROM Account, Customer
+WHERE Account.customerId = Customer.cid AND Customer.ssn = '961578-1523267';
+
+-- inner join 작성방식
+SELECT * FROM Account a INNER JOIN Customer c ON a.customerId = c.cid
+WHERE c.ssn = '961578-1523267';
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

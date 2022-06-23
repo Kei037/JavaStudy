@@ -22,7 +22,8 @@ public class JDBCExample3 {
 			Connection con = DriverManager.getConnection(url, id, passwd);
 			System.out.println("CONNECTED TO ---> " + url);
 			
-			String sql = "INSERT INTO Customer (name, ssn, phone, customerID, passwd)" + " VALUES (?, ?, ?, ?, ?)";
+			String sql = "INSERT INTO Customer (name, ssn, phone, customerID, passwd)"
+			+ " VALUES (?, ?, ?, ?, ?)";
 			PreparedStatement stmt = con.prepareStatement(sql);
 			stmt.setString(1, "조조");
 			stmt.setString(2, "840824-4562498");
@@ -37,8 +38,6 @@ public class JDBCExample3 {
 			
 		} catch (Exception e) {
 			e.printStackTrace();
-		} finally {
-			
 		}
 	}
 }

@@ -11,6 +11,7 @@ public class AccountJdbcTest {
 		String url = "jdbc:mysql://localhost:3306/jv250?serverTimezone=Asia/Seoul";
 		String id = "jv250";
 		String passwd = "jv250";
+		
 		try {
 			Class.forName(driver);
 			System.out.println("LOADED DRIVER ---> " + driver);
@@ -78,4 +79,5 @@ public class AccountJdbcTest {
 			e.printStackTrace();
 		}
 	}
+	
 }
