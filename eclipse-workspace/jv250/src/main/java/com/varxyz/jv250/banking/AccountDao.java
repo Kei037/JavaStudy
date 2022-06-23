@@ -39,15 +39,12 @@ public class AccountDao {
 				pstmt = con.prepareStatement(sql);
 				pstmt.setString(1, account.getAccountNum());
 				pstmt.setDouble(2, account.getBalance());
-				System.out.println("test");
 				if (account instanceof SavingsAccount) {
-					System.out.println("tests");
 					SavingsAccount sa = (SavingsAccount)account;
 					pstmt.setDouble(3, sa.getInterestRate());
 					pstmt.setDouble(4, 0.0);
 					pstmt.setString(5, String.valueOf('S'));
 				}else {
-					System.out.println("testc");
 					CheckingAccount ca = (CheckingAccount)account;
 					pstmt.setDouble(3, 0.0);
 					pstmt.setDouble(4, ca.getOverdraftAmount());
@@ -101,6 +98,7 @@ public class AccountDao {
 					account.setCustomer(new Customer(rs.getString("name"),
 							rs.getString("ssn"), rs.getString("phone")));
 					account.setRegDate(rs.getTimestamp("regDate"));
+					account.setAccountType(rs.getString("accountType").charAt(0));
 					list.add(account);
 				}
 			} finally {

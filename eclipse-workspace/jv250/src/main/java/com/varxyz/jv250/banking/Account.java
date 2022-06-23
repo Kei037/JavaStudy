@@ -10,22 +10,6 @@ public class Account {
 	protected Date regDate;
 	protected char accountType;
 	
-	public char getAccountType() {
-		return accountType;
-	}
-
-	public void setAccountType(char accountType) {
-		this.accountType = accountType;
-	}
-
-	public Date getRegDate() {
-		return regDate;
-	}
-
-	public void setRegDate(Date regDate) {
-		this.regDate = regDate;
-	}
-
 	public Account () {
 		
 	}
@@ -70,7 +54,22 @@ public class Account {
 	public Customer getCustomer() {
 		return this.customer;
 	}
+	public Date getRegDate() {
+		return regDate;
+	}
 
+	public void setRegDate(Date regDate) {
+		this.regDate = regDate;
+	}
+	
+	public char getAccountType() {
+		return accountType;
+	}
+
+	public void setAccountType(char accountType) {
+		this.accountType = accountType;
+	}
+	
 	@Override
 	public String toString() {
 		return "Account [aid=" + aid + ", accountNum=" + accountNum + ", balance="
