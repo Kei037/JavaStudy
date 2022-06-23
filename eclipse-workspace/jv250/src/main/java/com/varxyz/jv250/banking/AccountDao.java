@@ -10,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 
-public class AccountDao {
+public class AccountDao extends CommonDao {
 	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 	private static final String JDBC_URL = "jdbc:mysql://localhost:3306/jv250?serverTimezone=Asia/Seoul";
 	private static final String JDBC_USER = "jv250";
@@ -67,10 +67,6 @@ public class AccountDao {
 	 * @return
 	 */
 	public List<Account> findAccountsBySsn(String ssn) {
-		String sql = "SELECT a.aid, a.accountNum, a.balance, a.interestRate, "
-				+ " a.overdraft, a.accountType, c.name, c.ssn, c.phone, a.regDate" //약칭 AS accountAid
-				+ " FROM Account a INNER JOIN Customer c ON a.customerId = c.cid"
-				+ " WHERE c.ssn = ?";
 		List<Account> list = new ArrayList<Account>();
 		try {
 			Connection con = null;
@@ -78,7 +74,7 @@ public class AccountDao {
 			ResultSet rs = null;
 			try {
 				con = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORED);
-				pstmt = con.prepareStatement(sql);
+				pstmt = con.prepareStatement(sql2);
 				pstmt.setString(1, ssn);
 				rs = pstmt.executeQuery();
 				Account account = null;
@@ -114,7 +110,7 @@ public class AccountDao {
 	
 	/**
 	 * 등록된 모든 계좌 목록 조회
-	 * @return
+	 * @return 		// 수정중
 	 */
 	public List<Customer> findAllAccounts() {
 		String sql = "SELECT * FROM Account";

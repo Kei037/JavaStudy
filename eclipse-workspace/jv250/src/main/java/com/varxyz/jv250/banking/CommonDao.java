@@ -4,11 +4,19 @@ package com.varxyz.jv250.banking;
  * @author Administrator
  *
  */
-public class CommonDao {
+public abstract class CommonDao {
 	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 	private static final String JDBC_URL = "jdbc:mysql://localhost:3306/jv250?serverTimezone=Asia/Seoul";
 	private static final String JDBC_USER = "jv250";
 	private static final String JDBC_PASSWORED = "jv250";
+	
+	String sql = "INSERT INTO Account (accountNum, balance, interestRate, overdraft, accountType, customerId)"
+			 + " VALUES (?, ?, ?, ?, ?, ?)";
+	
+	String sql2 = "SELECT a.aid, a.accountNum, a.balance, a.interestRate, "
+			+ " a.overdraft, a.accountType, c.name, c.ssn, c.phone, a.regDate" //약칭 AS accountAid
+			+ " FROM Account a INNER JOIN Customer c ON a.customerId = c.cid"
+			+ " WHERE c.ssn = ?";
 	
 	public CommonDao() {
 		try {
