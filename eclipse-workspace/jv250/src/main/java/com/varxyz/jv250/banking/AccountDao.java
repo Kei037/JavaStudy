@@ -1,6 +1,5 @@
 package com.varxyz.jv250.banking;
 
-import java.nio.file.attribute.AclEntry;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -9,8 +8,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-
-public class AccountDao extends CommonDao {
+public class AccountDao {
 	private static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
 	private static final String JDBC_URL = "jdbc:mysql://localhost:3306/jv250?serverTimezone=Asia/Seoul";
 	private static final String JDBC_USER = "jv250";
@@ -29,8 +27,9 @@ public class AccountDao extends CommonDao {
 	 * @param customer			등록할 고객정보
 	 */
 	public void addAccount(Account account) {
-		String sql = "INSERT INTO Account (accountNum, balance, interestRate, overdraft, accountType, customerId)"
-				 + " VALUES (?, ?, ?, ?, ?, ?)";
+		String sql = "INSERT INTO Account (accountNum, balance, interestRate, overdraft, "
+				+ " accountType, customerId)"
+				+ " VALUES (?, ?, ?, ?, ?, ?)";
 		try {
 			Connection con = null;
 			PreparedStatement pstmt = null;
@@ -60,6 +59,8 @@ public class AccountDao extends CommonDao {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		
+		
 	}
 	/**
 	 * 전달된 주민번호를 가진 특정 고객의 계좌 목록 조회
@@ -67,6 +68,10 @@ public class AccountDao extends CommonDao {
 	 * @return
 	 */
 	public List<Account> findAccountsBySsn(String ssn) {
+		String sql = "SELECT a.aid, a.accountNum, a.balance, a.interestRate, "
+				+ " a.overdraft, a.accountType, c.name, c.ssn, c.phone, a.regDate" 	//약칭 AS accountAid
+				+ " FROM Account a INNER JOIN Customer c ON a.customerId = c.cid"
+				+ " WHERE c.ssn = ?";
 		List<Account> list = new ArrayList<Account>();
 		try {
 			Connection con = null;
@@ -74,7 +79,7 @@ public class AccountDao extends CommonDao {
 			ResultSet rs = null;
 			try {
 				con = DriverManager.getConnection(JDBC_URL, JDBC_USER, JDBC_PASSWORED);
-				pstmt = con.prepareStatement(sql2);
+				pstmt = con.prepareStatement(sql);
 				pstmt.setString(1, ssn);
 				rs = pstmt.executeQuery();
 				Account account = null;
@@ -112,7 +117,7 @@ public class AccountDao extends CommonDao {
 	 * 등록된 모든 계좌 목록 조회
 	 * @return 		// 수정중
 	 */
-	public List<Customer> findAllAccounts() {
+	public List<Account> findAllAccounts() {
 		String sql = "SELECT * FROM Account";
 		List<Account> accountList = new ArrayList<Account>();
 		try {
@@ -124,8 +129,7 @@ public class AccountDao extends CommonDao {
 				pstmt = con.prepareStatement(sql);
 				rs = pstmt.executeQuery();
 				while(rs.next()) {
-					Account c = new Account(sql, 0);
-					accountList.add(c);
+					
 				}
 			} finally {
 				rs.close();
@@ -138,17 +142,4 @@ public class AccountDao extends CommonDao {
 		return null;
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 

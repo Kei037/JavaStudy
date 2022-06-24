@@ -1,6 +1,5 @@
 package com.varxyz.jv250.banking;
 
-import java.nio.file.attribute.AclEntry;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -115,19 +114,3 @@ public class CustomerDao {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

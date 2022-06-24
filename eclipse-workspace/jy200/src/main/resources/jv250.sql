@@ -22,6 +22,8 @@ CREATE TABLE Customer (
 	regDate		TIMESTAMP		NOT NULL	DEFAULT CURRENT_TIMESTAMP
 ) AUTO_INCREMENT = 1001;
 
+ALTER TABLE Customer CHANGE customerId userId VARCHAR(16) NOT NULL;
+
 SELECT * FROM Customer;
 
 INSERT INTO Customer (name, ssn, phone, customerID, passwd) VALUES ('유비', '901213-1234567', '010-2323-2323', 'java', '1111');

@@ -2,11 +2,11 @@ package com.varxyz.jv250.banking;
 
 import java.util.Date;
 
-public class Account {
+public abstract class Account {
 	protected long aid;
 	protected String accountNum;	// 계좌번호
 	protected double balance;		// 잔액
-	protected static Customer customer;
+	protected Customer customer;
 	protected Date regDate;
 	protected char accountType;
 	
